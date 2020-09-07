@@ -4,6 +4,7 @@ import './css/weather-icons.min.css';
 import './css/all.min.css';
 import WeatherTile from './WeatherTile';
 import Header from './Header';
+import NotFound from './404NotFound';
 import { createClient } from 'pexels';
 
 
@@ -115,7 +116,7 @@ class App extends React.Component {
     return (
       <div id = 'container'>
         <Header handleSubmit = {this.handleSubmit}/>
-        {this.state.weather ? <WeatherTile weather = {this.state.weather} isOn = {this.state.isOn} tempUnit = {this.state.tempUnit} handleToogle = {this.handleToogle} backgroundImage = {this.state.weather.backgroundImage} /> : <div />} 
+        {this.state.weather ? <WeatherTile weather = {this.state.weather} isOn = {this.state.isOn} tempUnit = {this.state.tempUnit} handleToogle = {this.handleToogle} backgroundImage = {this.state.weather.backgroundImage} /> : <NotFound />} 
       </div>
     );
   }
