@@ -19,7 +19,7 @@ class Switch extends React.Component {
     }
     render() {
         return (
-            <>
+            <div className = {this.props.className}>
             <input
                 checked = {this.props.isOn}
                 onChange= {() => {this.props.onClick();}}
@@ -29,13 +29,13 @@ class Switch extends React.Component {
                 type="checkbox"
             />
             <label
-                className={`react-switch-label`}
+                className={`${this.props.class} react-switch-label`}
                 htmlFor={`react-switch-new`}
             >
                 <i className = {`${this.assignIcons()} tempIcon`}/>
                 <span className={`react-switch-button`} />
             </label>
-            </>
+            </div>
         );
     }
 };

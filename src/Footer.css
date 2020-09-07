@@ -1,0 +1,45 @@
+.footer {
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    bottom: 0;
+    align-items: center;
+    flex-direction: row;
+    background-color: #48484A;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.flexI{
+    margin-top: 10px;
+}
+
+.pexelLogo {
+    margin-left: 20px;
+}
+
+.gitHub i{
+    color: darkgray;
+}
+
+.gitHub {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.photographer {
+    color: darkgray;
+    font-size: 26px;
+}
+
+.photographer a {
+    text-decoration: none;
+    color: orchid;
+}
+  
